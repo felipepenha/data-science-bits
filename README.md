@@ -8,8 +8,8 @@ Repository for the Data Science Bits YouTube channel
 
 # Receiver Operating Characteristic
 
-* [ROC from balanced distributions](https://github.com/felipepenha/data-science-bits/performance_metrics/ROC_balanced.html)
+* [ROC from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_balanced.html)
 
-* [ROC from unbalanced distributions](https://github.com/felipepenha/data-science-bits/performance_metrics/ROC_unbalanced.html)
+* [ROC from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_unbalanced.html)
 
-* [ROC from random guess (baseline)](https://github.com/felipepenha/data-science-bits/performance_metrics/ROC_baseline.html)
+* [ROC from random guess (baseline)](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_baseline.html)
