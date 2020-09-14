@@ -7,6 +7,10 @@ Repository for the Data Science Bits YouTube channel
 
 # Performance Metrics
 
+## TN, FP, FN, and TP
+
+* [TN, FP, FN, and TP from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/distr_balanced.html)
+
 ## True Positive Rate (TPR) and False Positive Rate (FPR)
 
 * [TPR and FPR from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/TPR_FPR_balanced.html)
