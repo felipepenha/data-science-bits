@@ -7,7 +7,7 @@ Repository for the Data Science Bits YouTube channel
 
 # Performance Metrics
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLAyz_McAak4kdOqpribZk3pyw3NSNHb3q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[Performance Metrics playlist on YouTube](https://www.youtube.com/playlist?list=PLAyz_McAak4kdOqpribZk3pyw3NSNHb3q)
 
 ## TN, FP, FN, and TP
 
