@@ -48,14 +48,19 @@ Rotation:
 
 * [Precision and Recall from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/precision_recall_balanced_granular.html)
 
+* [Precision and Recall from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/precision_recall_unbalanced_granular.html)
+
 With difference (or delta) animation:
 
 * [Precision and Recall from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/precison_recall_diff_balanced_granular.html)
+
+* [Precision and Recall from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/precison_recall_diff_unbalanced_granular.html)
 
 ## Precision vs Recall
 
 * [Precision vs Recall from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/precision_vs_recall_balanced_granular.html)
 
+* [Precision vs Recall from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/precision_vs_recall_unbalanced_granular.html)
 
 
 
