@@ -42,3 +42,18 @@ Rotation:
 
 * [ROC from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_rotation_unbalanced.html)
 
+## Precision and Recall
+
+* [Precision and Recall from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/precision_recall_balanced_granular.html)
+
+With difference (or delta) animation:
+
+* [Precision and Recall from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/precision_recall_diff_balanced_granular.html)
+
+## Precision vs Recall
+
+* [Precision vs Recall from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/precision_vs_recall_balanced_granular.html)
+
+
+
+
