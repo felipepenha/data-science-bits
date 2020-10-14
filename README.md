@@ -29,7 +29,7 @@ With difference (or delta) animation:
 
 * [TPR and FPR delta from random guess (baseline)](https://felipepenha.github.io/data-science-bits/performance_metrics/TPR_FPR_diff_baseline.html)
 
-## Receiver Operating Characteristic
+## Receiver Operating Characteristic (ROC)
 
 * [ROC from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_balanced.html)
 
