@@ -48,7 +48,7 @@ Rotation:
 
 With difference (or delta) animation:
 
-* [Precision and Recall from balanced distributions](https://github.com/felipepenha/data-science-bits/blob/master/performance_metrics/precison_recall_diff_balanced_granular.html)
+* [Precision and Recall from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/precison_recall_diff_balanced_granular.html)
 
 ## Precision vs Recall
 
