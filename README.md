@@ -46,7 +46,7 @@ Repository for the Data Science Bits YouTube channel
 
 ### Top Mistakes:
 
-* [Collab Notebook with Examples](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_top_mistakes.ipynb)
+* [Collab Notebook with Examples](https://github.com/felipepenha/data-science-bits/tree/master/performance_metrics/ROC_top_mistakes.ipynb)
 
 ## Precision and Recall
 
