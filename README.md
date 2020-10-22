@@ -23,7 +23,7 @@ Repository for the Data Science Bits YouTube channel
 
 * [TPR and FPR from random guess (baseline)](https://felipepenha.github.io/data-science-bits/performance_metrics/TPR_FPR_baseline.html)
 
-With difference (or delta) animation:
+### With difference (or delta) animation:
 
 * [TPR and FPR delta from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/TPR_FPR_diff_balanced.html)
 
@@ -40,9 +40,13 @@ With difference (or delta) animation:
 * [ROC from random guess (baseline)](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_baseline.html)
 
 
-Rotation:
+### Rotation:
 
 * [ROC from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_rotation_unbalanced.html)
+
+### Top Mistakes:
+
+* [Collab Notebook with Examples](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_top_mistakes.html)
 
 ## Precision and Recall
 
