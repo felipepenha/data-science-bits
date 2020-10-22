@@ -37,7 +37,7 @@ Repository for the Data Science Bits YouTube channel
 
 * [ROC from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_unbalanced.html)
 
-* [ROC from random guess (baseline)](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_baseline.html)
+* [ROC from random guess (baseline)](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_baseline.ipynb)
 
 
 ### Rotation:
