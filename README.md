@@ -37,7 +37,7 @@ Repository for the Data Science Bits YouTube channel
 
 * [ROC from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_unbalanced.html)
 
-* [ROC from random guess (baseline)](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_baseline.ipynb)
+* [ROC from random guess (baseline)](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_baseline.html)
 
 
 ### Rotation:
@@ -46,7 +46,7 @@ Repository for the Data Science Bits YouTube channel
 
 ### Top Mistakes:
 
-* [Collab Notebook with Examples](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_top_mistakes.html)
+* [Collab Notebook with Examples](https://felipepenha.github.io/data-science-bits/performance_metrics/ROC_top_mistakes.ipynb)
 
 ## Precision and Recall
 
