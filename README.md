@@ -21,15 +21,11 @@ Repository for the Data Science Bits YouTube channel
 
 * [TPR and FPR from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/TPR_FPR_unbalanced.html)
 
-* [TPR and FPR from random guess (baseline)](https://felipepenha.github.io/data-science-bits/performance_metrics/TPR_FPR_baseline.html)
-
 ### With difference (or delta) animation:
 
 * [TPR and FPR delta from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/TPR_FPR_diff_balanced.html)
 
 * [TPR and FPR delta from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/TPR_FPR_diff_unbalanced.html)
-
-* [TPR and FPR delta from random guess (baseline)](https://felipepenha.github.io/data-science-bits/performance_metrics/TPR_FPR_diff_baseline.html)
 
 ## Receiver Operating Characteristic (ROC)
 
