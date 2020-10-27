@@ -62,5 +62,9 @@ With difference (or delta) animation:
 
 * [Precision vs Recall from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/precision_vs_recall_unbalanced_granular.html)
 
+## F1 Score
+
+* [Precision, Recall, Arithmetic Mean, Geometric Mean, and F1 Score (Harmonic Mean)](https://github.com/felipepenha/data-science-bits/blob/master/performance_metrics/F1_score_unbalanced_granular.html)
+
 
 
