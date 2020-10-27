@@ -1,0 +1,511 @@
+% Copyright 2020 by Junwei Wang <i.junwei.wang@gmail.com>
+%
+% This file may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3c
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+
+\documentclass[compress]{beamer}
+
+\usepackage[document]{ragged2e}
+
+\usepackage[english]{babel}
+\usepackage{metalogo}
+\usepackage{listings}
+\usepackage{fontspec}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\usetheme{Nord}
+% \usetheme[style=light]{Nord}
+
+\setmainfont{Yanone Kaffeesatz}
+\setsansfont{Andika New Basic}
+\setmonofont{DejaVu Sans Mono}
+
+\AtBeginSection[]
+{
+  \begin{frame}[c,noframenumbering,plain]
+    \tableofcontents[sectionstyle=show/hide,subsectionstyle=show/show/hide]
+  \end{frame}
+}
+
+\AtBeginSubsection[]
+{
+  \begin{frame}[c,noframenumbering,plain]
+    \tableofcontents[sectionstyle=show/hide,subsectionstyle=show/shaded/hide]
+  \end{frame}
+}
+
+\title{Beamer Theme ``Nord''}
+\subtitle{A simple beamer theme that uses ``Nord'' color scheme}
+\author{Junwei Wang}
+\institute{CryptoExperts}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}[plain,noframenumbering]
+
+\begin{itemize}
+
+\item \color{NordOrange} True Positive Rate \color{NordWhite}(TPR), \color{NordOrange} Recall\color{NordWhite}, or \color{NordOrange} Sensitivity \color{NordWhite}
+
+\begin{equation*}
+\text{TPR} = \displaystyle\frac{\text{TP}}{\text{TP}+\text{FN}}
+\end{equation*}
+
+\pause
+
+\vspace{25pt}
+
+\item \color{NordOrange} Precision \color{NordWhite}
+
+\begin{equation*}
+\text{Precision} = \displaystyle\frac{\text{TP}}{\text{TP}+\text{FP}}
+\end{equation*}
+
+
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\begin{frame}[plain,noframenumbering]
+
+\flushright
+
+\begin{tikzpicture}[>=latex]
+\begin{axis}[ymin=1,
+axis x line=bottom,
+axis y line=left,
+xmax=9,
+ymax=9,
+every axis x label/.style={at={(current axis.right of origin)}, below=5pt},
+every axis y label/.style={at={(current axis.north west)},rotate=90, above=5pt},
+xlabel=Recall,
+ylabel=Precision,
+xtick={3,5},
+ytick={5, 4},
+xticklabels={\color{NordWhite}{\footnotesize{$\hspace{-50pt}\displaystyle\frac{\text{TP}\color{NordCyan}-1}{\text{TP}-1+\text{FN}+1}$}}, \color{NordWhite}{\footnotesize{$\hspace{10pt}\displaystyle\frac{\text{TP}}{\text{TP}+\text{FN}}$}}},
+yticklabels={\color{NordWhite}{\footnotesize{$\displaystyle\frac{\text{TP}}{\text{TP}+\text{FP}}$}},
+\color{NordWhite}{\footnotesize{$\displaystyle\frac{\text{TP}\color{NordCyan}-1}{\text{TP}\color{NordCyan}-1\color{NordWhite}+\text{FP}\color{NordCyan}-1\color{NordWhite}}$}}
+}
+]
+\addplot [mark=none,draw=white]
+coordinates {(1,7)(1,5.5)(3,6)(3,4)(5,5)(5,3)(7,4)};
+\addplot [mark=none,draw=NordCyan, style={ultra thick, <-}]
+coordinates {(3,4)(5,5)};
+\addplot [mark=none,draw=NordCyan, style={thin, dashed}]
+coordinates {(0,5)(5,5)};
+\addplot [mark=none,draw=NordCyan, style={thin, dashed}]
+coordinates {(0,4)(3,4)};
+\addplot [mark=none,draw=NordCyan, style={thin, dashed}]
+coordinates {(3,0)(3,4)};
+\addplot [mark=none,draw=NordCyan, style={thin, dashed}]
+coordinates {(5,0)(5,5)};
+\end{axis}
+\end{tikzpicture}
+
+\end{frame}
+
+
+
+
+\begin{frame}[plain,noframenumbering]
+
+\begin{equation*}
+\displaystyle\frac{\text{TP}}{\text{TP}+\text{FP}}
+\hspace{2pt} \color{NordOrange}>\color{NordWhite} \hspace{2pt}
+\displaystyle\frac{\text{TP}-1}{\text{TP}-1+\text{FP}-1}
+\end{equation*}
+
+\begin{equation*}
+\color{NordOrange}\Rightarrow\color{NordWhite} \hspace{2pt}
+\text{TP}^2 + \text{TP} \times \text{FP} - 2 \times \text{TP}
+\hspace{2pt} \color{NordOrange}>\color{NordWhite} \hspace{2pt}
+\text{TP}^2 + \text{TP} \times \text{FP} - \text{TP} - \text{FP}
+\end{equation*}
+
+\begin{equation*}
+\color{NordOrange}\Rightarrow\color{NordWhite} \hspace{2pt}
+\text{TP}
+\hspace{2pt} \color{NordOrange}<\color{NordWhite} \hspace{2pt}
+\text{FP}
+\end{equation*}
+
+\end{frame}
+
+
+
+
+\begin{frame}[plain,noframenumbering]
+
+\flushright
+
+\begin{tikzpicture}[>=latex]
+\begin{axis}[ymin=1,
+axis x line=bottom,
+axis y line=left,
+xmax=9,
+ymax=9,
+every axis x label/.style={at={(current axis.right of origin)}, below=5pt},
+every axis y label/.style={at={(current axis.north west)},rotate=90, above=5pt},
+xlabel=Recall,
+ylabel=Precision,
+xtick={3,5},
+ytick={5, 4},
+xticklabels={\color{NordWhite}{\footnotesize{$\hspace{-50pt}\displaystyle\frac{\text{TP}\color{NordCyan}-1}{\text{TP}-1+\text{FN}+1}$}}, \color{NordWhite}{\footnotesize{$\hspace{10pt}\displaystyle\frac{\text{TP}}{\text{TP}+\text{FN}}$}}},
+yticklabels={\color{NordWhite}{\footnotesize{$\displaystyle\frac{\text{TP}\color{NordCyan}-1}{\text{TP}\color{NordCyan}-1\color{NordWhite}+\text{FP}\color{NordCyan}-1\color{NordWhite}}$}},
+\color{NordWhite}{\footnotesize{$\displaystyle\frac{\text{TP}}{\text{TP}+\text{FP}}$}}
+}
+]
+\addplot [mark=none,draw=white]
+coordinates {(1,7)(3,6)(3,5)(3,5)(5,4)(5,3)(7,2)};
+\addplot [mark=none,draw=NordCyan, style={ultra thick, <-}]
+coordinates {(3,5)(5,4)};
+\addplot [mark=none,draw=NordCyan, style={thin, dashed}]
+coordinates {(0,5)(3,5)};
+\addplot [mark=none,draw=NordCyan, style={thin, dashed}]
+coordinates {(0,4)(5,4)};
+\addplot [mark=none,draw=NordCyan, style={thin, dashed}]
+coordinates {(3,0)(3,5)};
+\addplot [mark=none,draw=NordCyan, style={thin, dashed}]
+coordinates {(5,0)(5,3)};
+\end{axis}
+\end{tikzpicture}
+
+\end{frame}
+
+
+
+
+\begin{frame}[plain,noframenumbering]
+
+\begin{equation*}
+\displaystyle\frac{\text{TP}}{\text{TP}+\text{FP}}
+\hspace{2pt} \color{NordOrange}<\color{NordWhite} \hspace{2pt}
+\displaystyle\frac{\text{TP}-1}{\text{TP}-1+\text{FP}-1}
+\end{equation*}
+
+\begin{equation*}
+\color{NordOrange}\Rightarrow\color{NordWhite} \hspace{2pt}
+\text{TP}^2 + \text{TP} \times \text{FP} - 2 \times \text{TP}
+\hspace{2pt} \color{NordOrange}<\color{NordWhite} \hspace{2pt}
+\text{TP}^2 + \text{TP} \times \text{FP} - \text{TP} - \text{FP}
+\end{equation*}
+
+\begin{equation*}
+\color{NordOrange}\Rightarrow\color{NordWhite} \hspace{2pt}
+\text{TP}
+\hspace{2pt} \color{NordOrange}>\color{NordWhite} \hspace{2pt}
+\text{FP}
+\end{equation*}
+
+\end{frame}
+
+
+
+
+\begin{frame}[plain,noframenumbering]
+
+\flushright
+
+\begin{tikzpicture}[>=latex]
+\begin{axis}[ymin=1,
+axis x line=bottom,
+axis y line=left,
+xmax=9,
+ymax=9,
+every axis x label/.style={at={(current axis.right of origin)}, below=5pt},
+every axis y label/.style={at={(current axis.north west)},rotate=90, above=5pt},
+xlabel=Recall,
+ylabel=Precision,
+xtick={3},
+ytick={6, 4},
+xticklabels={\color{NordWhite}{\footnotesize{$\displaystyle\frac{\text{TP}}{\text{TP}+\text{FN}}$}}},
+yticklabels={\color{NordWhite}{\footnotesize{$\displaystyle\frac{\text{TP}}{\text{TP}+\text{FP}\color{NordOrange}-1\color{NordWhite}}$}},
+\color{NordWhite}{\footnotesize{$\displaystyle\frac{\text{TP}}{\text{TP}+\text{FP}}$}}
+}
+]
+\addplot [mark=none,draw=white]
+coordinates {(1,7)(1,5.5)(3,6)(3,4)(5,5)(5,3)(7,4)};
+\addplot [mark=none,draw=NordCyan, style={ultra thick, <-}]
+coordinates {(3,4)(5,5)};
+\addplot [mark=none,draw=NordOrange, style={ultra thick, <-}]
+coordinates {(3,6)(3,4)};
+\addplot [mark=none,draw=NordOrange, style={thin, dashed}]
+coordinates {(0,6)(3,6)};
+\addplot [mark=none,draw=NordOrange, style={thin, dashed}]
+coordinates {(0,4)(3,4)};
+\addplot [mark=none,draw=NordOrange, style={thin, dashed}]
+coordinates {(3,0)(3,6)};
+\end{axis}
+\end{tikzpicture}
+
+\end{frame}
+
+
+
+
+\begin{frame}[plain,noframenumbering]
+
+\begin{itemize}
+
+\item \color{NordOrange}Average Precision (AP)\color{NordWhite}
+
+\end{itemize}
+
+
+\flushright
+
+\begin{tikzpicture}[>=latex]
+\begin{axis}[ymin=1,
+axis x line=bottom,
+axis y line=left,
+xmax=9,
+ymax=9,
+every axis x label/.style={at={(current axis.right of origin)}, below=5pt},
+every axis y label/.style={at={(current axis.north west)},rotate=90, above=5pt},
+xlabel=Recall,
+ylabel=Precision,
+xtick={3,5},
+ytick={5},
+xticklabels={\color{NordWhite}{\footnotesize{$\hspace{-50pt}\displaystyle\frac{\text{TP}\color{NordCyan}-1}{\text{TP}-1+\text{FN}+1}$}}, \color{NordWhite}{\footnotesize{$\hspace{10pt}\displaystyle\frac{\text{TP}}{\text{TP}+\text{FN}}$}}},
+yticklabels={\color{NordWhite}{\footnotesize{$\displaystyle\frac{\text{TP}}{\text{TP}+\text{FP}}$}}}
+]
+\addplot [mark=none,draw=white]
+coordinates {(1,7)(1,5.5)(3,6)(3,4)(5,5)(5,3)(7,4)};
+\addplot [mark=none,draw=NordCyan, style={ultra thick, <-}]
+coordinates {(3,4)(5,5)};
+\addplot [mark=none,draw=NordOrange, style={thin, dashed}]
+coordinates {(3,5)(5,5)};
+\addplot [mark=none,draw=NordOrange, style={thin, dashed}]
+coordinates {(3,0)(3,5)};
+\addplot [mark=none,draw=NordOrange, style={thin, dashed}]
+coordinates {(5,0)(5,5)};
+%
+\node[above] at (axis cs:4,2.5) {\color{NordOrange}$\delta$AP};
+%
+\end{axis}
+\end{tikzpicture}
+
+\end{frame}
+
+
+
+
+\begin{frame}[plain,noframenumbering]
+
+\begin{itemize}
+
+\item \color{NordOrange}Average Precision (AP)\color{NordWhite}
+
+\vspace{10pt}
+
+\begin{equation*}
+\color{NordOrange}\delta\text{AP}\color{NordWhite} =
+\left(\displaystyle\frac{\text{TP}}{\text{TP}+\text{FP}} \right)
+\times
+\left[ \displaystyle\frac{\text{TP} - \left(\text{TP}-1\right)}{\text{TP}+\text{FN}} \right]
+\end{equation*}
+
+\pause
+
+\begin{equation*}
+\color{NordOrange}\delta\text{AP}\color{NordWhite} =
+\left(\displaystyle\frac{\text{TP}}{\text{TP}+\text{FP}} \right)
+\times
+\left[ \displaystyle\frac{1}{\text{TP}+\text{FN}} \right]
+\end{equation*}
+
+
+\pause
+
+\begin{equation*}
+\color{NordOrange}\delta\text{AP}\color{NordWhite} =
+\left(\displaystyle\frac{1}{1+\color{NordOrange}\displaystyle\frac{\text{FN}}{\text{TP}}}\color{NordWhite} \right)
+\times
+\left( \displaystyle\frac{\text{1}}{1+\color{NordCyan}\displaystyle\frac{\text{FP}}{\text{TP}}} \color{NordWhite} \right)
+\times
+\frac{1}{\text{TP}}
+\end{equation*}
+
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\begin{frame}[plain,noframenumbering]
+
+\begin{itemize}
+
+\item \color{NordOrange}Average Precision (AP)\color{NordWhite}
+
+\vspace{10pt}
+
+\begin{equation*}
+\color{NordOrange}\delta\text{AP}\color{NordWhite} =
+\left(\displaystyle\frac{1}{1+\color{NordOrange}\uparrow\displaystyle\frac{\text{FN}}{\text{TP}}}\color{NordWhite} \right)
+\times
+\left[ \displaystyle\frac{\text{1}}{1+\color{NordCyan}\downarrow\displaystyle\frac{\text{FP}}{\text{TN}} \left(\color{NordWhite} \displaystyle\frac{\text{TN}}{\text{TP}} \right)} \right]
+\times
+\frac{1}{\text{TP}}
+\end{equation*}
+
+\pause
+
+\begin{equation*}
+\text{TP} + \text{FN}
+= n_P
+\hspace{10pt}\Rightarrow\hspace{10pt}
+\color{NordOrange}\displaystyle\frac{\text{FN}}{\text{TP}}\color{NordWhite}
+= \displaystyle\frac{n_P}{\text{TP}} - 1
+\end{equation*}
+
+\begin{equation*}
+\text{TN} + \text{FP}
+= n_N
+\hspace{10pt}\Rightarrow\hspace{10pt}
+\color{NordCyan}\displaystyle\frac{\text{FP}}{\text{TN}}\color{NordWhite}
+= \displaystyle\frac{n_N}{\text{TN}} - 1
+\end{equation*}
+
+\end{itemize}
+
+\end{frame}
+
+
+% \section{Appearance}
+
+
+% \begin{frame}[fragile]
+%   \frametitle{Usage}
+%   Simply include the following code in your preamble:
+
+%   \begin{lstlisting}[basicstyle = \ttfamily\small]
+% \usetheme{Nord}
+%   \end{lstlisting}
+
+%   \bigskip
+
+%   By default, the appearance is in dark theme, however you can actively choose a either a light or a
+%   dark theme.
+
+%   \begin{lstlisting}[basicstyle = \ttfamily\small]
+% \usetheme[style=light]{Nord}
+% \usetheme[style=dark]{Nord}
+%   \end{lstlisting}
+
+% \end{frame}
+
+% \subsection{Colors}
+
+% \begin{frame}{Defined Colors}{This is a subtitle}
+%   \begin{description}[Snow Storm]
+%   \item[Polar Night]
+%     \textcolor{NordDarkBlack}{NordDarkBlack} \quad \textcolor{NordBlack}{NordBlack}\\
+%     \textcolor{NordMediumBlack}{NordMediumBlack} \quad \textcolor{NordBrightBlack}{NordBrightBlack}
+%   \item[Snow Storm]
+%     \textcolor{NordWhite}{NordWhite} \quad \textcolor{NordBrighterWhite}{NordBrightestWhite}\\
+%     \textcolor{NordBrightestWhite}{NordBrightestWhite}
+%   \item[Forest]
+%     \textcolor{NordCyan}{NordCyan} \quad \textcolor{NordBrightCyan}{NordBrightCyan}\\
+%     \textcolor{NordBlue}{NordBlue} \quad \textcolor{NordBrightBlue}{NordBrightBlue}
+%   \item[Aurora]
+%     \textcolor{NordRed}{NordRed} \quad \textcolor{NordOrange}{NordOrange} \\
+%     \textcolor{NordYellow}{NordYellow} \quad \textcolor{NordGreen}{NordGreen} \\
+%     \textcolor{NordMagenta}{NordMagenta}
+%   \end{description}
+% \end{frame}
+
+% \subsection{Fonts}
+
+% \begin{frame}[fragile]{Recommended Free Fonts}
+%   \begin{description}[Selected Fonts]
+%   \item[Selected Fonts] recommended for this theme\\
+%     \begin{lstlisting}[basicstyle = \ttfamily\small]
+% \setmainfont{Yanone Kaffeesatz}
+% \setsansfont{Andika New Basic}
+% \setmonofont{DejaVu Sans Mono}
+%     \end{lstlisting}
+%   \item[Download] {\small \url{https://www.fontsquirrel.com/}}
+%   \item[Install Fonts] {\small \url{https://www.google.com/get/noto/help/install/}}
+%   \item[Compilation] compile with \XeLaTeX~to use system-wide fonts
+%   \end{description}
+
+% \end{frame}
+
+
+% \subsection{Blocks}
+
+% \begin{frame}
+%   \frametitle{Blocks}
+%   \begin{block}{This is a Block}
+%     \[
+%       a^2 + b^2 = c^2
+%     \]
+%   \end{block}
+%   \begin{exampleblock}{This is an Example Block}
+%     \[
+%       E = m \cdot c^{2}
+%     \]
+%   \end{exampleblock}
+%   \begin{alertblock}{This is an Alert Block}
+%     \[
+%       e^{i\pi} + 1 = 0
+%     \]
+%   \end{alertblock}
+
+%   \centering
+%   \begin{minipage}{1.0\linewidth}
+%     \begin{block}{Horizontally-Aligned Block}
+%       \[
+%         \log xy = \log x + \log y
+%       \]
+%     \end{block}
+%   \end{minipage}
+% \end{frame}
+
+% \subsection{Items}
+
+% \begin{frame}{Items}
+%   Itemize
+%   \begin{itemize}
+%     \item item 1
+%     \item item 2
+%   \end{itemize}
+
+%   \bigskip
+
+%   Enumerate
+%   \begin{enumerate}
+%     \item item 1
+%     \item item 2
+%   \end{enumerate}
+% \end{frame}
+
+% \subsection{Figures}
+
+% \begin{frame}{Figures}
+%   \begin{figure}
+%     \centering
+%     \begin{tikzpicture}
+%       \draw [help lines,NordMagenta,very thick] (0,0) grid (5,4);
+%     \end{tikzpicture}
+%     \caption{Credits to Ti\textit{k}Z}
+%   \end{figure}
+% \end{frame}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-engine: xetex
+%%% End:
