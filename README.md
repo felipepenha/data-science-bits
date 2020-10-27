@@ -64,7 +64,7 @@ With difference (or delta) animation:
 
 ## F1 Score
 
-* [Precision, Recall, Arithmetic Mean, Geometric Mean, and F1 Score (Harmonic Mean)](https://github.io/data-science-bits/blob/master/performance_metrics/F1_score_unbalanced_granular.html)
+* [Precision, Recall, Arithmetic Mean, Geometric Mean, and F1 Score (Harmonic Mean)](https://github.io/data-science-bits/performance_metrics/F1_score_unbalanced_granular.html)
 
 
 
