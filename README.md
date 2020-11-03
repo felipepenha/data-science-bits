@@ -66,6 +66,13 @@ With difference (or delta) animation:
 
 * [Precision, Recall, Arithmetic Mean, Geometric Mean, and F1 Score (Harmonic Mean)](https://felipepenha.github.io/data-science-bits/performance_metrics/F1_score_unbalanced_granular.html)
 
+## Accuracy
+
+* [Precision, Recall, F1 Score, and Accuracy from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/Accuracy_balanced_granular.html)
+
+* [Precision, Recall, F1 Score, and Accuracy from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/Accuracy_unbalanced_granular.html)
+
+
 
 
 
