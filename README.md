@@ -68,9 +68,9 @@ With difference (or delta) animation:
 
 ## Accuracy
 
-* [Precision, Recall, F1 Score, and Accuracy from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/Accuracy_balanced_granular.html)
+* [Precision, Recall, F1 Score, and Accuracy from balanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/Accuracy_balanced.html)
 
-* [Precision, Recall, F1 Score, and Accuracy from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/Accuracy_unbalanced_granular.html)
+* [Precision, Recall, F1 Score, and Accuracy from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/Accuracy_unbalanced.html)
 
 
 
