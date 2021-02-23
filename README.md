@@ -78,7 +78,9 @@ With difference (or delta) animation:
 
 * [Precision, Recall, F1 Score, Accuracy, and Matthews Corr. from unbalanced distributions](https://felipepenha.github.io/data-science-bits/performance_metrics/Matthews_correlation_unbalanced.html)
 
+# The Data Science Pipeline
 
+![](/pipeline/DS_pipeline_EN_white.png)
 
 
 
