@@ -84,4 +84,4 @@ With difference (or delta) animation:
 
 # Git Mondays (on Twitch 🖥️💜🖥️💜)
 
-* [Slide deck](https://felipepenha.github.io/data-science-bits/git-mondays/twitch_git_mondays_livestream_slidedeck.pdf)
+* [Slide deck](https://github.com/felipepenha/data-science-bits/blob/master/git-mondays/twitch_git_mondays_livestream_slidedeck.pdf)
