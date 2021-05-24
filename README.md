@@ -82,7 +82,6 @@ With difference (or delta) animation:
 
 ![](/pipeline/DS_pipeline_EN_white.png)
 
+# Git Mondays (on Twitch 🖥️💜🖥️💜)
 
-
-
-
+* [Slide deck](https://felipepenha.github.io/data-science-bits/git-mondays/twitch_git_mondays_livestream_slidedeck.pdf)
