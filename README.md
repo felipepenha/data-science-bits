@@ -85,3 +85,7 @@ With difference (or delta) animation:
 # Git Mondays (on Twitch 🖥️💜🖥️💜)
 
 * [Slide deck](https://github.com/felipepenha/data-science-bits/blob/master/git-mondays/twitch_git_mondays_livestream_slidedeck.pdf)
+
+# Git & GitHub - Do Básico ao Avançado em uma Noite (PT-BR on Twitch 🖥️💜🖥️💜)
+
+* [Slide deck](https://github.com/felipepenha/data-science-bits/blob/master/git-github-evening/twitch_git_github_evening_slidedeck_PT.pdf)
